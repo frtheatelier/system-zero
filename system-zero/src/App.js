@@ -4,6 +4,8 @@ import React from 'react';
 import './App.css';
 import { NavLink, Routes, Route } from 'react-router-dom';
 
+import World from './subpages/Worlds'
+
 function App() {
   return (
     <div className='app'>
@@ -28,6 +30,7 @@ const Navigation = () => (
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/about'>About</NavLink></li>
       <li><NavLink to='/contact'>Contact</NavLink></li>
+      <li><NavLink to='/world'>Worlds</NavLink></li>
     </ul>
   </nav>
 );
@@ -36,6 +39,7 @@ const Home = () => (
   <div className='home'>
     <h1>Welcome to my portfolio website</h1>
     <p> Feel free to browse around and learn more about me.</p>
+    <a href='/about'>About</a>
   </div>
 );
 
@@ -54,11 +58,13 @@ const Contact = () => (
   </div>
 );
 
+// Routes
 const Main = () => (
   <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/about' element={<About/>} />
     <Route path='/contact' element={<Contact/>} />
+    <Route path='/world' element={<World/>} />
   </Routes>
 );
 

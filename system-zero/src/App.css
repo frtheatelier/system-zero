@@ -83,3 +83,12 @@ p {
   margin-bottom: 15px;
 }
 
+ul.btnNav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+ul.btnNav button {
+  padding: 5px;
+}
+
