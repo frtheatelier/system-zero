@@ -1,5 +1,5 @@
 # system-zero
-Lore wiki
+Lore wiki of sorts.
 
 ## Clarifications
 Technically the whole project is in `/system-zero` as I'm learning how to use react lol. 
